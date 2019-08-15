@@ -1,0 +1,68 @@
+- var pageTitile = 'Lian | Contact'
+- var contact = true
+
+doctype html
+html(lang="en")
+  include layouts/head
+  body
+    include layouts/header
+    main
+        section#intro
+            .intro.contact-intro
+                .container
+                    .intro__inner 
+                        h1.intro__title.contact-title Get in Touch
+                        h2.intro__subtitle Contact us Today
+        section.contact
+            .container
+                .contact__inner
+                    .contact__office
+                        .office__title Office Info
+                        .office__subtitle People Behind the Success of our Company
+                        .office__line
+                        .office__info
+                            .office__hours Office Hours:
+                                span &nbsp;Mon-Friday 8am - 10pm
+                            .office__address Address:
+                                span &nbsp;Igbalangao, Bugasong, Antique
+                            .office__tell Tell:
+                                span &nbsp;123-456-7890
+                            .office__fax Fax:
+                                span &nbsp;123-456-7890
+                    form.contact__form
+                        .form__fields
+                            input.form__name(type="text" placeholder="Name" value="")
+                            input.form__email(type="email" placeholder="Email" value="")
+                            textarea.form__text(placeholder="Message" value="")
+                        .form__submit    
+                            input.form__btn(type="submit" value="Send Message")
+        section.contact__map
+            .map__address
+                .address
+                    button.btn__close
+                    span Mulitix Big Wordpress Theme
+                    p 110-00 Rockaway Blvd
+                    p South Ozone Park, NY 11420
+        section.values
+            .container
+                h3.value__caption Our Values
+                .value__text 
+                    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+                .value__inner
+                    .value__item
+                        .value__img
+                            img(src="img/contact/value-1.jpg" alt="")
+                        .value__title Who We Are
+                        .value__desc Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.
+                    .value__item
+                        .value__img
+                            img(src="img/contact/value-2.jpg" alt="")
+                        .value__title Our Vision
+                        .value__desc Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me.
+                    .value__item
+                        .value__img
+                            img(src="img/contact/value-3.jpg" alt="")
+                        .value__title Our Mission
+                        .value__desc Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
+    include layouts/footer
+    include layouts/script

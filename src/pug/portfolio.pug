@@ -1,0 +1,62 @@
+- var pageTitile = 'Lian | Portfolio'
+- var portfolio = true
+
+doctype html
+html(lang="en")
+  include layouts/head
+  body
+    include layouts/header
+    main
+      section#intro
+        .intro.portfolio-intro
+          .container
+              .intro__inner 
+                  h1.intro__title.portfolio-title Latest Projects
+                  h2.intro__subtitle We Deliver Quality
+      section.works
+        .container
+          nav.works__nav
+            a.works__nav__link.link__active(href="#") All
+            a.works__nav__link(href="#") Logo
+            a.works__nav__link(href="#") Mobile App
+            a.works__nav__link(href="#") WordPress
+            a.works__nav__link(href="#") Web Design
+            a.works__nav__link(href="#") UI/IX
+            a.works__nav__link(href="#") Branding
+          .works__content
+            .works__col-1
+              .works__item.height-2
+                img.works__photo(src="img/pictures/img-1.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+              .works__item.height-1
+                img.works__photo(src="img/pictures/img-2.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+              .works__item.height-3
+                img.works__photo(src="img/pictures/img-3.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+            .works__col-2
+              .works__item.height-1
+                img.works__photo(src="img/pictures/img-4.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+              .works__item.height-2
+                img.works__photo(src="img/pictures/img-5.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+              .works__item.height-1
+                img.works__photo(src="img/pictures/img-6.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+              .works__item.height-2
+                img.works__photo(src="img/pictures/img-7.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+            .works__col-3
+              .works__item.height-3
+                img.works__photo(src="img/pictures/img-8.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+              .works__item.height-1
+                img.works__photo(src="img/pictures/img-9.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+              .works__item.height-2
+                img.works__photo(src="img/pictures/img-10.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+            button.btn__load-more.btn--home Load More
+    include layouts/footer
+    include layouts/script

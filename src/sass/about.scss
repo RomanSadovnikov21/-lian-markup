@@ -1,0 +1,374 @@
+/* Intro
+===================== */
+
+.about-intro {
+  height: 350px;
+  background: #f0f0f2 url("../img/intro/about-contact-intro.png") right no-repeat;
+}
+
+.about-title {
+  width: 590px;
+  margin: 0;
+}
+
+/* Story
+===================== */
+
+.story {
+  margin: 95px auto;
+}
+
+.story__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.story__img {
+  position: relative;
+  overflow: hidden;
+  width: 530px;
+  height: auto;
+  margin: 0 12px 30px;
+}
+
+.story__photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.story__content {
+  width: 560px;
+  height: 600px;
+  margin: 0 12px;
+}
+
+.story__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #000;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 6px;
+  margin-bottom: 30px;
+}
+
+.story__desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.3px;
+  color: #777777;
+
+  p {
+    margin-bottom: 35px;
+  }
+}
+
+/* Skills
+===================== */
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill__title {
+  font-weight: 700;
+  color: #2f302f;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+
+.progress__bar {
+  width: 550px;
+  height: 10px;
+  background-color: #ebebeb;
+  padding: 4px 0 0 3px;
+}
+
+.progress__line {
+  position: relative;
+  height: 2px;
+  background-color: #a1a1a1;
+}
+
+.progress-1 {
+  width: 495px;
+}
+
+.progress-2 {
+  width: 520px;
+}
+
+.progress-3 {
+  width: 280px;
+}
+
+.progress-4 {
+  width: 455px;
+}
+
+.progress__dot {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 12px;
+  height: 12px;
+  border: 4px solid #000;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.progress__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background-color: #041608;
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  top: -40px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    border: 8px solid transparent;
+    border-left: 8px solid #041608;
+  }
+}
+
+/* Team
+===================== */
+
+.team__people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team__title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.team__desc {
+  width: 605px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #777777;
+  margin-bottom: 70px;
+}
+
+.people__item {
+  position: relative;
+  overflow: hidden;
+  max-width: 360px;
+  height: 630px;
+  background-color: #fff;
+  margin: 0 10px;
+}
+
+.people__img {
+  position: relative;
+  height: 440px;
+  background-color: #eeeeee;
+  overflow: hidden;
+}
+
+.people__photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.people__inner {
+  height: 155px;
+  width: 290px;
+  margin: 35px auto 0;
+}
+
+.people__name {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #041608;
+}
+
+.people__prof {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8;
+  color: #777777;
+}
+.people__desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0;
+  color: #9c9c9c;
+  margin-top: 10px;
+}
+
+/* Media
+===================== */
+
+@media (max-width: 1100px) {
+  .about-intro {
+    .intro__inner {
+      padding-left: 30px;
+    }
+  }
+  .story {
+    height: 1250px;
+  }
+  .story__content {
+    width: 530px;
+  }
+  .progress__bar {
+    width: 450px;
+  }
+
+  .progress-1 {
+    width: 395px;
+  }
+
+  .progress-2 {
+    width: 420px;
+  }
+
+  .progress-3 {
+    width: 220px;
+  }
+
+  .progress-4 {
+    width: 355px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-title {
+    width: 450px;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-intro {
+    height: 300px;
+  }
+  .about-title {
+    width: 360px;
+  }
+  .story {
+    width: 490px;
+  }
+  .team__desc {
+    width: 480px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-intro {
+    height: 250px;
+  }
+
+  .about-title {
+    width: 280px;
+  }
+
+  .story {
+    width: 380px;
+    height: 1150px;
+  }
+  .story__img {
+    width: 350px;
+  }
+
+  .story__content {
+    width: 350px;
+  }
+  .progress__bar {
+    width: 330px;
+  }
+
+  .progress-1 {
+    width: 275px;
+  }
+
+  .progress-2 {
+    width: 300px;
+  }
+
+  .progress-3 {
+    width: 160px;
+  }
+
+  .progress-4 {
+    width: 235px;
+  }
+
+  .team__desc {
+    width: 360px;
+  }
+}
+
+@media (max-width: 380px) {
+  .about-title {
+    width: 220px;
+  }
+  .story {
+    width: 310px;
+    height: 1130px;
+  }
+  .story__img {
+    width: 300px;
+  }
+
+  .story__content {
+    width: 300px;
+  }
+  .progress__bar {
+    width: 260px;
+  }
+
+  .progress-1 {
+    width: 205px;
+  }
+
+  .progress-2 {
+    width: 230px;
+  }
+
+  .progress-3 {
+    width: 90px;
+  }
+
+  .progress-4 {
+    width: 215px;
+  }
+
+  .team__desc {
+    width: 300px;
+  }
+}

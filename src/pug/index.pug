@@ -1,0 +1,81 @@
+- var pageTitile = 'Lian | Home'
+- var home = true
+
+doctype html
+html(lang="en")
+  include layouts/head
+  body
+    include layouts/header
+    main
+      section#intro
+        .slider__intro
+          #introSlider.intro__slider
+            .slider__item
+              .intro.home-intro.intro-1
+                .container
+                  .intro__inner.home-inner
+                      h1.intro__title.home-title Lian Creative Agency
+                      h2.intro__subtitle Minimal Freelance Portfolio
+                .home-intro__overlay
+            .slider__item
+              .intro.home-intro.intro-2
+                .container
+                  .intro__inner.home-inner
+                      h1.intro__title.home-title Design & Branding
+                      h2.intro__subtitle.home-subtitle We Deliver Quality Results
+                .home-intro__overlay
+            .slider__item
+              .intro.home-intro.intro-1
+                .container
+                  .intro__inner.home-inner
+                      h1.intro__title.home-title Lian Creative Agency
+                      h2.intro__subtitle.home-subtitle Minimal Freelance Portfolio
+                .home-intro__overlay
+      section.works
+        .container
+          nav.works__nav
+            a.works__nav__link.link__active(href="#") All
+            a.works__nav__link(href="#") Logo
+            a.works__nav__link(href="#") Mobile App
+            a.works__nav__link(href="#") WordPress
+            a.works__nav__link(href="#") Web Design
+            a.works__nav__link(href="#") UI/IX
+            a.works__nav__link(href="#") Branding
+          .works__content
+            .works__col-1
+              .works__item.height-2
+                img.works__photo(src="img/pictures/img-1.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+              .works__item.height-1
+                img.works__photo(src="img/pictures/img-2.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+              .works__item.height-3
+                img.works__photo(src="img/pictures/img-3.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+            .works__col-2
+              .works__item.height-1
+                img.works__photo(src="img/pictures/img-4.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+              .works__item.height-2
+                img.works__photo(src="img/pictures/img-5.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+              .works__item.height-1
+                img.works__photo(src="img/pictures/img-6.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+              .works__item.height-2
+                img.works__photo(src="img/pictures/img-7.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+            .works__col-3
+              .works__item.height-3
+                img.works__photo(src="img/pictures/img-8.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+              .works__item.height-1
+                img.works__photo(src="img/pictures/img-9.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+              .works__item.height-2
+                img.works__photo(src="img/pictures/img-10.jpg" alt="")
+                a(href="portfolio_details.html").works__details +
+          .btn__load-home
+            button.btn__load-more.btn--home Load More
+    include layouts/footer
+    include layouts/script

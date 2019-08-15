@@ -1,0 +1,205 @@
+- var pageTitile = 'Lian | Blog'
+- var blog = true
+
+doctype html
+html(lang="en")
+  include layouts/head
+  body
+    include layouts/header
+    main
+        section#intro
+            .intro.blog-intro
+                .container
+                    .intro__inner 
+                        h1.intro__title.blog-title News about Lian
+                        h2.intro__subtitle Latest News & Insights
+        section.blog
+            .container
+                .blog__inner
+                    .blog__content
+                        .content__col
+                            .content__item.normal-post
+                                .content__block
+                                    .content__category Wordpress
+                                    h3.content__title.title-bold
+                                        a(href="blog_post.html") I am a Blog Post Title
+                                    .content__author
+                                        i.fa.fa-user(aria-hidden="true")
+                                        span &nbsp;by Jenn Pereira
+                                    .content__desc
+                                        p Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris. Etiam facilisis eu nisi scelerisque faucibus...
+                                    .content__info
+                                        .info__date
+                                            i.fa.fa-calendar-o(aria-hidden="true") 
+                                            span &nbsp;on July 19, 2016
+                                        .info__like
+                                            a.info__like__item(href="#")
+                                                i.fa.fa-share-alt(aria-hidden="true")
+                                            a.info__like__item(href="#")
+                                                i.fa.fa-heart(aria-hidden="true")
+                            .content__item.normal-post
+                                .content__category-image Images
+                                .content__img
+                                    a(href="blog_post.html")
+                                        img.content__photo(src="img/blog/img-2.jpg" alt="")
+                                .content__block
+                                    h3.content__title
+                                        a(href="blog_post.html") I am a Blog Post with an Awesome Image
+                                    .content__author
+                                        i.fa.fa-user(aria-hidden="true")
+                                        span &nbsp;by Jenn Pereira
+                                    .content__desc
+                                        p Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris...
+                                    .content__info
+                                        .info__date
+                                            i.fa.fa-calendar-o(aria-hidden="true")
+                                            span &nbsp;on July 19, 2016
+                                        .info__like
+                                            a.info__like__item(href="#")
+                                                i.fa.fa-share-alt(aria-hidden="true")
+                                            a.info__like__item(href="#")
+                                                i.fa.fa-heart(aria-hidden="true")
+                            .content__item.image-post
+                                img.content__photo(src="img/blog/img-4.jpg" alt="")
+                                .content__block-image
+                                    .content__category Image Hover
+                                    h3.content__title
+                                         a(href="blog_post.html") I am a Blog Post Title
+                                    .content__author
+                                        i.fa.fa-user(aria-hidden="true")
+                                        span &nbsp;by Jenn Pereira
+                                    .content__desc
+                                        p Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper...
+                                    .content__info
+                                        .info__date
+                                            i.fa.fa-calendar-o(aria-hidden="true")
+                                            span &nbsp;on July 19, 2016
+                                        .info__like
+                                            a.info__like__item(href="#")
+                                                i.fa.fa-share-alt(aria-hidden="true")
+                                            a.info__like__item(href="#")
+                                                i.fa.fa-heart(aria-hidden="true")
+                                .image-post__overlay
+                        .content__col
+                            .content__item.normal-post
+                                .content__category-image Images
+                                .content__img
+                                    a(href="blog_post.html")
+                                        img.content__photo(src="img/blog/img-1.jpg" alt="")
+                                .content__block
+                                    h3.content__title.title-bold
+                                        a(href="blog_post.html") I am a Blog Post with an Awesome Image
+                                    .content__author
+                                        i.fa.fa-user(aria-hidden="true")
+                                        span &nbsp;by Jenn Pereira
+                                    .content__desc
+                                        p Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris...
+                                    .content__info
+                                        .info__date
+                                            i.fa.fa-calendar-o(aria-hidden="true")
+                                            span &nbsp;on July 19, 2016
+                                        .info__like
+                                            a.info__like__item(href="#")
+                                                i.fa.fa-share-alt(aria-hidden="true")
+                                            a.info__like__item(href="#")
+                                                i.fa.fa-heart(aria-hidden="true")
+                            .content__item.video-post
+                                video.video(muted, preload="auto", poster="img/blog/img-video.jpg" src="img/blog/video.mp4")
+                                .video__btn
+                                    button#play-pause
+                            .content__item.normal-post
+                                .content__category-image Images
+                                .content__img
+                                    a(href="blog_post.html")
+                                        img.content__photo(src="img/blog/img-3.jpg" alt="")
+                                .content__block
+                                    h3.content__title
+                                        a(href="blog_post.html") I am a Blog Post with an Awesome Image
+                                    .content__author
+                                        i.fa.fa-user(aria-hidden="true")
+                                        span &nbsp;by Jenn Pereira
+                                    .content__desc
+                                        p Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris...
+                                    .content__info
+                                        .info__date
+                                            i.fa.fa-calendar-o(aria-hidden="true")
+                                            span &nbsp;on July 19, 2016
+                                        .info__like
+                                            a.info__like__item(href="#")
+                                                i.fa.fa-share-alt(aria-hidden="true")
+                                            a.info__like__item(href="#")
+                                                i.fa.fa-heart(aria-hidden="true")
+                        .btn__load-blog
+                            button.btn__load-more Load More
+                    section.blog__info
+                        .content__col
+                            .content__item
+                                .content__search
+                                    form(action="" method="get")
+                                        input(name="search" placeholder="Search" type="text")
+                                        button(type="submit")
+                            .content__item.recent-post
+                                h4.content__caption Recent Posts
+                                .post__item
+                                    .post__content
+                                        a(href="blog_post.html")
+                                            img(src="img/blog/posts/post-1.jpg" alt="")
+                                        .post__desc
+                                            h5.post__name
+                                                a(href="blog_post.html") Lorem ipsum dolor sit amet, consec
+                                            .post__date July 5, 2016
+                                    .post__content
+                                        a(href="blog_post.html")
+                                            img(src="img/blog/posts/post-2.jpg" alt="")
+                                        .post__desc
+                                            h5.post__name
+                                                 a(href="blog_post.html") Ut wisi enim ad minim veniam, quis
+                                            .post__date July 17, 2016
+                                    .post__content
+                                        a(href="blog_post.html")
+                                            img(src="img/blog/posts/post-3.jpg" alt="")
+                                        .post__desc
+                                            h5.post__name
+                                                 a(href="blog_post.html") Aliquip ex ea commodo aliquam erat volutpat
+                                            .post__date July 21, 2016
+                                    .post__content
+                                        a(href="blog_post.html")
+                                            img(src="img/blog/posts/post-4.jpg" alt="")
+                                        .post__desc
+                                            h5.post__name
+                                                 a(href="blog_post.html") Ut wisi enim ad minim veniam, quis
+                                            .post__date July 17, 2016
+                            .content__item.tags-post
+                                h4.content__caption Popular Tags
+                                .tags__inner
+                                    ui.tags__list
+                                        li
+                                            a.tags__name(href="#") construction
+                                        li
+                                            a.tags__name(href="#") engineering
+                                        li
+                                            a.tags__name(href="#") architecture
+                                        li
+                                            a.tags__name(href="#") structural design
+                                        li
+                                            a.tags__name(href="#") civil engineer
+                                        li
+                                            a.tags__name(href="#") industrial
+                                        li
+                                            a.tags__name(href="#") management
+                                        li
+                                            a.tags__name(href="#") mechanical
+                            .content__item.instagram-post
+                                h4.content__caption Instargam
+                                .instagram__inner
+                                    img(src="img/blog/instagram/inst-1.jpg" alt="")
+                                    img(src="img/blog/instagram/inst-2.jpg" alt="")
+                                    img(src="img/blog/instagram/inst-3.jpg" alt="")
+                                    img(src="img/blog/instagram/inst-4.jpg" alt="")
+                                    img(src="img/blog/instagram/inst-5.jpg" alt="")
+                                    img(src="img/blog/instagram/inst-6.jpg" alt="")
+                                    img(src="img/blog/instagram/inst-7.jpg" alt="")
+                                    img(src="img/blog/instagram/inst-8.jpg" alt="")
+                                    img(src="img/blog/instagram/inst-9.jpg" alt="")                 
+    include layouts/footer
+    include layouts/script

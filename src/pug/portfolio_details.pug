@@ -1,0 +1,143 @@
+- var pageTitile = 'Lian | Portfolio | Details'
+- var portfolio = true
+
+doctype html
+html(lang="en")
+  include layouts/head
+  body
+    include layouts/header
+    main
+        section#intro
+            .intro.portfolio-intro
+                .container
+                    .intro__inner 
+                        h1.intro__title.portfolio-title Latest Projects
+                        h2.intro__subtitle We Deliver Quality
+        nav.portfolio-details__nav
+            .container
+                .nav__inner
+                    .nav__next-prev
+                        button.btn__prev Previous
+                        button.btn__next Next
+                    .nav__show-all
+                        button.btn__show-all(onClick='location.href="portfolio.html"') Show All
+        section.portfolio-details
+            .container
+                #projectSlider.project__slider
+                    .project-1
+                        .portfolio-details__inner
+                            .portfolio-details__content.content-1
+                                .portfolio-details__caption
+                                    h3.caption__title Pereira Creative Agency
+                                    h4.caption__subtitle Branding Design
+                                .portfolio-details__info
+                                    .info__date-likes
+                                        .date February 28, 2015
+                                        .likes 
+                                            i.fa.fa-heart-o(aria-hidden="true") 
+                                            span &nbsp;324 likes
+                                    .info__desc Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+                                .content__role
+                                    .role__title Role On Project:
+                                    .role__text Project Designer, Lead Designer, Markerting Head
+                                .content__tags
+                                    .tags__title Tags:
+                                    .tags__text Mobile App, UI/UX design
+                                .content__social
+                                    .social__share
+                                        a.share(href="#") Share
+                                    .social__icons
+                                        a.social__icon(href="#")
+                                            i(aria-hidden="true").fa.fa-facebook
+                                        a.social__icon(href="#")
+                                            i(aria-hidden="true").fa.fa-google-plus
+                                        a.social__icon(href="#")
+                                            i(aria-hidden="true").fa.fa-twitter
+                                        a.social__icon(href="#")
+                                            i(aria-hidden="true").fa.fa-linkedin
+                                        a.social__icon(href="#")
+                                            i(aria-hidden="true").fa.fa-dribbble
+                                        a.social__icon(href="#")
+                                            i(aria-hidden="true").fa.fa-pinterest-p
+                                        a.social__icon(href="#")
+                                            i(aria-hidden="true").fa.fa-instagram
+                            .portfolio-details__gallery-1
+                                .gallery__img-big
+                                    img.gallery__photo(src="img/portfolio/projects-1/img-big.jpg" alt="")
+                                .gallery__inner
+                                    .gallery__img
+                                        img.gallery__photo(src="img/portfolio/projects-1/img-1.jpg" alt="")
+                                        .img__overlay
+                                    .gallery__img
+                                        img.gallery__photo(src="img/portfolio/projects-1/img-2.jpg" alt="")
+                                        .img__overlay
+                                    .gallery__img
+                                        img.gallery__photo(src="img/portfolio/projects-1/img-3.jpg" alt="")
+                                        .img__overlay
+                                    .gallery__img
+                                        img.gallery__photo(src="img/portfolio/projects-1/img-4.jpg" alt="")
+                                        .img__overlay
+                    .project-2                    
+                        .portfolio-details__inner
+                            .portfolio-details__gallery-2
+                                .gallery__img-big
+                                    img.gallery__photo(src="img/portfolio/projects-2/img-big.jpg" alt="")
+                                .gallery__inner
+                                    .gallery__img
+                                        img.gallery__photo(src="img/portfolio/projects-2/img-1.jpg" alt="")
+                                        .img__overlay
+                                    .gallery__img
+                                        img.gallery__photo(src="img/portfolio/projects-2/img-2.jpg" alt="")
+                                        .img__overlay
+                                    .gallery__img
+                                        img.gallery__photo(src="img/portfolio/projects-2/img-3.jpg" alt="")
+                                        .img__overlay
+                                    .gallery__img
+                                        img.gallery__photo(src="img/portfolio/projects-2/img-4.jpg" alt="")
+                                        .img__overlay
+                            .portfolio-details__content.content-2
+                                .portfolio-details__caption
+                                    h3.caption__title Pereira Creative Agency
+                                    h4.caption__subtitle Branding Design
+                                .portfolio-details__info
+                                    .info__date-likes
+                                        .date February 28, 2015
+                                        .likes 
+                                            i.fa.fa-heart-o(aria-hidden="true") 
+                                            span &nbsp;324 likes
+                                    .info__desc Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+                                .content__role
+                                    .role__title Role On Project:
+                                    .role__text Project Designer, Lead Designer, Markerting Head
+                                .content__tags
+                                    .tags__title Tags:
+                                    .tags__text Mobile App, UI/UX design
+                                .content__social
+                                    .social__share
+                                        a.share(href="#") Share
+                                    .social__icons
+                                        a.social__icon(href="#")
+                                            i(aria-hidden="true").fa.fa-facebook
+                                        a.social__icon(href="#")
+                                            i(aria-hidden="true").fa.fa-google-plus
+                                        a.social__icon(href="#")
+                                            i(aria-hidden="true").fa.fa-twitter
+                                        a.social__icon(href="#")
+                                            i(aria-hidden="true").fa.fa-linkedin
+                                        a.social__icon(href="#")
+                                            i(aria-hidden="true").fa.fa-dribbble
+                                        a.social__icon(href="#")
+                                            i(aria-hidden="true").fa.fa-pinterest-p
+                                        a.social__icon(href="#")
+                                            i(aria-hidden="true").fa.fa-instagram
+        section.related__works
+            .container
+                h5.work__title Related Works
+                .work__desc 
+                    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                .work__images
+                    img(src="img/portfolio/works/work-1.jpg" alt="")
+                    img(src="img/portfolio/works/work-2.jpg" alt="")
+                    img(src="img/portfolio/works/work-3.jpg" alt="")
+    include layouts/footer
+    include layouts/script

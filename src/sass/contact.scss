@@ -1,0 +1,392 @@
+/* Intro
+===================== */
+
+.contact-intro {
+  height: 350px;
+  background: #f0f0f2 url("../img/intro/about-contact-intro.png") right no-repeat;
+}
+
+.contact-title {
+  width: 440px;
+  margin: 0;
+}
+
+/* Contact Info
+===================== */
+
+.contact__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 80px 0;
+}
+
+.contact__office {
+  width: 360px;
+  height: 270px;
+}
+
+.office__title {
+  color: #000;
+  font-weight: 300;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  margin-bottom: 8px;
+}
+
+.office__subtitle {
+  color: #626362;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+
+.office__line {
+  width: 60px;
+  border-bottom: 1px solid #000;
+  letter-spacing: 0.05em;
+  margin-bottom: 40px;
+}
+
+.office__info {
+  color: #222222;
+  font-size: 15px;
+  font-weight: bold;
+
+  span {
+    color: #808080;
+    font-weight: 400;
+  }
+
+  .office__hours,
+  .office__address {
+    margin-bottom: 30px;
+  }
+
+  .office__tell,
+  .office__fax {
+    margin-bottom: 10px;
+
+    span {
+      font-weight: 700;
+      color: #555555;
+    }
+  }
+}
+
+/* Form
+===================== */
+
+.contact__form {
+  width: 750px;
+  height: 290px;
+}
+
+.form__fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  input,
+  textarea {
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    background: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+    transition: all 0.1s linear;
+
+    &:focus {
+      border-left: 3px solid #a4a4a4;
+      box-shadow: 0 0 6px #a4a4a4;
+      padding-left: 8px;
+    }
+
+    &::placeholder {
+      font-weight: 400;
+      font-style: italic;
+      color: #bababa;
+    }
+  }
+}
+
+.form__name,
+.form__email {
+  width: 360px;
+  height: 40px;
+}
+
+.form__text {
+  width: 750px;
+  height: 150px;
+  margin-top: 30px;
+  padding: 10px 0;
+  resize: none;
+}
+
+.form__submit {
+  .form__btn {
+    width: 220px;
+    padding: 12px 0;
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    margin-top: 25px;
+    background-color: #000;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    transition: all 0.1s linear;
+
+    &:hover,
+    &:active {
+      background-color: #959595;
+    }
+  }
+}
+
+/* Map
+===================== */
+
+.contact__map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 360px;
+  background: url("../img/contact/map.jpg") center no-repeat;
+}
+
+.map__address {
+  position: relative;
+  width: 325px;
+  height: 125px;
+  border-radius: 2px;
+  background-color: #fff;
+  margin: -40px 0 0 155px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 46%;
+    bottom: -50px;
+    border: 15px solid transparent;
+    border-top: 40px solid #fff;
+  }
+
+  .address {
+    text-align: center;
+    color: #919191;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 2;
+    margin-top: 20px;
+
+    span {
+      color: #041608;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  .btn__close {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    color: #cccccc;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    width: 0;
+    height: 14px;
+    right: 0;
+    top: 0;
+    margin: 10px 10px 0 0;
+    transition: all 0.1s linear;
+
+    &:before {
+      content: "\f00d";
+      font-family: "FontAwesome";
+      font-size: 16px;
+      margin-top: -5px;
+    }
+
+    &:hover,
+    &:active {
+      color: #000;
+    }
+  }
+}
+
+/* Values
+===================== */
+
+.value__caption {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #000;
+  margin: 60px 0 30px;
+}
+
+.value__text {
+  width: 605px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  color: #777777;
+  margin-bottom: 50px;
+}
+
+.value__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.value__item {
+  position: relative;
+  overflow: hidden;
+  max-width: 350px;
+  height: 405px;
+  margin: 0 15px 30px;
+}
+
+.value__img {
+  height: 245px;
+  background-color: #a1a1a1;
+  margin-bottom: 25px;
+}
+
+.value__title {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.value__desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.1;
+  letter-spacing: 0.02em;
+  color: #777777;
+}
+
+/* Media
+===================== */
+
+@media (max-width: 1100px) {
+  .contact-intro {
+    .intro__inner {
+      padding-left: 30px;
+    }
+  }
+  .form__submit {
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-title {
+    width: 350px;
+  }
+  .contact__form {
+    width: 600px;
+    height: 330px;
+    .form__name,
+    .form__email {
+      width: 290px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .contact-intro {
+    height: 300px;
+  }
+  .contact-title {
+    width: 280px;
+  }
+  .contact__form {
+    width: 500px;
+    height: 360px;
+
+    .form__email {
+      margin-top: 20px;
+    }
+
+    .form__name,
+    .form__email {
+      width: 500px;
+    }
+  }
+  .value__text {
+    width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-intro {
+    height: 250px;
+  }
+
+  .contact-title {
+    width: 220px;
+  }
+  .contact__form {
+    width: 370px;
+  }
+  .map__address {
+    margin-left: 40px;
+    &::after {
+      left: 64%;
+    }
+  }
+  .value__text {
+    width: 370px;
+  }
+}
+
+@media (max-width: 380px) {
+  .contact-title {
+    width: 160px;
+  }
+  .contact__form {
+    width: 300px;
+  }
+  .value__text {
+    width: 300px;
+  }
+  .contact__office {
+    width: 300px;
+  }
+  .office__title {
+    font-size: 26px;
+  }
+  .office__subtitle {
+    font-size: 14px;
+  }
+  .map__address {
+    width: 300px;
+    margin-left: 0px;
+    &::after {
+      left: 72%;
+    }
+  }
+}

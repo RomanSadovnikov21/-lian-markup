@@ -1,0 +1,39 @@
+mixin linkActive(link,name,last)
+  if(last)
+    a(href=link).nav__link.link__active=name
+  else
+    a(href=link).nav__link=name
+
+mixin burgerLinkActive(link,name,last)
+  if(last)
+    a(href=link).burger-menu__link.link__active=name
+  else
+    a(href=link).burger-menu__link=name
+
+header.header
+  .container
+    .header__inner
+      .header__logo
+        a(href="index.html")
+          img(src="img/logo.png" alt="")
+      nav.nav
+        +linkActive('index.html','Home', home)
+        +linkActive('about.html','About', about)
+        +linkActive('portfolio.html','Portfolio', portfolio)
+        +linkActive('blog.html','Blog', blog)
+        +linkActive('contact.html','Contact', contact)
+        a.nav__link(href="#")
+          i.fa.fa-search(aria-hidden="true")
+      a.burger-menu__btn(href="#")
+        span.burger-menu__lines
+.burger-menu
+  nav.burger-menu__nav
+    .burger-menu__search
+      form(action="" method="get")
+        input(name="search" placeholder="Search" type="text")
+        button(type="submit")
+    +burgerLinkActive('index.html','Home', home)
+    +burgerLinkActive('about.html','About', about)
+    +burgerLinkActive('portfolio.html','Portfolio', portfolio)
+    +burgerLinkActive('blog.html','Blog', blog)
+    +burgerLinkActive('contact.html','Contact', contact)      

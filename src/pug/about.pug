@@ -1,0 +1,83 @@
+- var pageTitile = 'Lian | About'
+- var about = true
+
+doctype html
+html(lang="en")
+  include layouts/head
+  body
+    include layouts/header
+    main
+      section#intro
+        .intro.about-intro
+          .container
+            .intro__inner
+              h1.intro__title.about-title About the agency
+              h2.intro__subtitle Welcome to Lian
+      section.story
+        .container
+          .story__inner
+            .story__img
+              img.story__photo(src="img/about/story-1.jpg" alt="")
+            .story__content
+              h3.story__title Our Story
+              .story__desc
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+                p Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
+              .story__skills
+                h3.story__title Our Skills
+                .skill
+                  .skill__title Photoshop
+                  .progress__bar
+                    .progress__line.progress-1
+                      .progress__dot
+                        .progress__info 90%
+                .skill
+                  .skill__title Branding
+                  .progress__bar
+                    .progress__line.progress-2
+                      .progress__dot
+                        .progress__info 95%
+                .skill
+                  .skill__title Photography
+                  .progress__bar
+                    .progress__line.progress-3
+                      .progress__dot
+                        .progress__info 50%
+                .skill
+                  .skill__title Web Design
+                  .progress__bar
+                    .progress__line.progress-4
+                      .progress__dot
+                        .progress__info 85%
+      section.team
+        .container
+            h4.team__title Awesome Team
+            .team__desc 
+              p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+            .team__people
+              .people__item
+                .people__img
+                  img.people__photo(src="img/about/team-1.png" alt="")
+                .people__inner
+                  .people__name Lian Joy
+                  .people__prof CEO/Founder
+                  .people__desc 
+                    p Lorem ipsum dolor sit amet, conse ctetuer adipi scing elit, sed diam nonu mmy nibh euis mod tinci
+              .people__item
+                .people__img
+                  img.people__photo(src="img/about/team-2.png" alt="")
+                .people__inner
+                  .people__name Albert Thanh
+                  .people__prof CEO/Founder
+                  .people__desc
+                     p Lorem ipsum dolor sit amet, conse ctetuer adipi scing elit, sed diam nonu mmy nibh euis mod tinci
+              .people__item
+                .people__img
+                  img.people__photo(src="img/about/team-3.png" alt="")
+                .people__inner
+                  .people__name Jenn Pereira
+                  .people__prof CEO/Founder
+                  .people__desc
+                     p Lorem ipsum dolor sit amet, conse ctetuer adipi scing elit, sed diam nonu mmy nibh euis mod tinci
+    include layouts/footer
+    include layouts/script
