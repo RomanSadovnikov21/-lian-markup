@@ -15,19 +15,19 @@ const pug = require("gulp-pug");
 sass.compiler = require('node-sass');
 
 function styles() {
-  return gulp.src('./src/css/*.css')
-    .pipe(concat('style.css'))
+  return gulp.src('./src/css/main.css')
     .pipe(cleanCSS({ level: 2 }))
-    .pipe(rename('style.min.css'))
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.stream());
 }
 
 function libsCss() {
   return gulp.src('./src/css/libs/*.css')
+    .pipe(concat('libs.css'))
     .pipe(cleanCSS({ level: 2 }))
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('./dist/css/libs'))
+    .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.stream());
 }
 

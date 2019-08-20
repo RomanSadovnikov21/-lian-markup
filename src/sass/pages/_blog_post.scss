@@ -1,0 +1,297 @@
+/* Post
+===================== */
+
+.post__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 70px;
+}
+.post__title {
+  color: #333333;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 0.15em;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+.post__info {
+  color: #777777;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+
+  .date {
+    margin: 0 60px;
+  }
+}
+
+.post__img {
+  position: relative;
+  margin: 15px auto;
+}
+
+.post__photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.post__desc {
+  text-align: left;
+  margin: 0 auto;
+  width: 810px;
+  color: #777777;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.1;
+  letter-spacing: 0.03em;
+  padding: 0;
+
+  p {
+    margin-bottom: 30px;
+  }
+}
+.post__quote {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #777777;
+  text-align: left;
+  width: 945px;
+  height: 130px;
+  padding: 15px 0 0 40px;
+  margin: 0 auto 30px;
+  border: 1px solid #e1e1e1;
+  border-left: 3px solid #b4b4b4;
+}
+.post__heading {
+  text-align: left;
+  margin: 0 auto;
+  width: 810px;
+  color: #777777;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.2;
+  letter-spacing: 0.03em;
+
+  h4 {
+    color: #333333;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+}
+
+/* Form
+===================== */
+
+.post__form {
+  width: 810px;
+  height: 310px;
+  margin: 45px auto 10px;
+
+  .form__title {
+    color: #000;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+  }
+
+  .form__fields {
+    display: flex;
+    justify-content: space-between;
+
+    input,
+    textarea {
+      border: 1px solid #e1e1e1;
+      border-radius: 2px;
+      background: transparent;
+      padding-left: 10px;
+      padding-right: 10px;
+      outline: none;
+      transition: all 0.1s linear;
+
+      &:focus {
+        border-left: 3px solid #a4a4a4;
+        box-shadow: 0 0 6px #a4a4a4;
+        padding-left: 8px;
+      }
+
+      &::placeholder {
+        font-weight: 400;
+        font-style: italic;
+        color: #c4c4c4;
+      }
+    }
+  }
+
+  .form__name,
+  .form__email,
+  .form__web {
+    width: 250px;
+    height: 40px;
+  }
+
+  .form__text {
+    width: 810px;
+    height: 110px;
+    margin-top: 20px;
+    padding: 10px 0;
+    resize: none;
+  }
+
+  .form__submit {
+    .form__btn {
+      width: 195px;
+    }
+  }
+}
+
+/* Media
+===================== */
+
+@media (max-width: 1100px) {
+  .post__title {
+    width: 750px;
+  }
+  .post__desc {
+    width: 750px;
+  }
+  .post__quote {
+    width: 750px;
+    font-size: 16px;
+  }
+  .post__heading {
+    width: 750px;
+  }
+  .post__form {
+    width: 750px;
+    height: 370px;
+    .form__name,
+    .form__email {
+      width: 360px;
+    }
+    .form__web {
+      width: 750px;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .post__title {
+    width: 600px;
+  }
+  .post__desc {
+    width: 600px;
+  }
+  .post__quote {
+    width: 600px;
+    font-size: 16px;
+  }
+  .post__heading {
+    width: 600px;
+  }
+  .post__form {
+    width: 600px;
+    height: 470px;
+    .form__name,
+    .form__email {
+      width: 285px;
+    }
+
+    .form__text {
+      height: 210px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .post__title {
+    width: 500px;
+    font-size: 26px;
+  }
+  .post__desc {
+    width: 500px;
+  }
+  .post__quote {
+    width: 500px;
+    font-size: 14px;
+    height: 140px;
+  }
+  .post__heading {
+    width: 500px;
+  }
+  .post__form {
+    width: 500px;
+    height: 530px;
+    .form__name,
+    .form__email {
+      width: 500px;
+    }
+    .form__email {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .post__title {
+    width: 370px;
+    font-size: 20px;
+  }
+  .post__info {
+    .date {
+      margin: 0 30px;
+    }
+  }
+  .post__desc {
+    width: 370px;
+  }
+  .post__quote {
+    width: 350px;
+    height: 180px;
+  }
+  .post__heading {
+    width: 370px;
+  }
+  .post__form {
+    width: 370px;
+  }
+}
+
+@media (max-width: 380px) {
+  .post__title {
+    width: 300px;
+    font-size: 18px;
+  }
+  .post__info {
+    font-size: 12px;
+    .date {
+      margin: 0 15px;
+    }
+  }
+  .post__desc {
+    width: 300px;
+  }
+  .post__quote {
+    width: 300px;
+    height: 200px;
+  }
+  .post__heading {
+    width: 300px;
+  }
+  .post__form {
+    width: 300px;
+  }
+}

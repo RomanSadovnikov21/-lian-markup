@@ -402,6 +402,17 @@ main {
   }
 }
 
+/* Pages
+===================== */
+
+@import 'base/font';
+@import 'pages/index';
+@import 'pages/about';
+@import 'pages/blog';
+@import 'pages/blog_post';
+@import 'pages/portfolio_details';
+@import 'pages/contact';
+
 /* Media
 ===================== */
 
